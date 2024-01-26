@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de mensajes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Barcode+128+Text&family=Mukta:wght@200;300;400;500;600;700;800&family=Rubik+Burned&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container-general">
+        <div class="titulo">
+            <h2>Encriptador de mensaje</h2>
+        </div>
+        <div>
+            <div class="menu-principal">
+                <div class="encriptador">
+                    <textarea id="mensaje" name="textarea" rows="10" cols="45" placeholder="Ingresa tu mensaje, lo encriptare!" class="input-textearea"></textarea>
+                    <div class="botones-encriptador">
+                        <button onclick="encriptarMensaje()" class="resetear-styles boton">Encriptar</button>
+                        <button onclick="desencriptarMensaje()" class="resetear-styles boton">Desencriptar</button>
+                    </div>
+                </div>
+                <div class="cargador">
+                    <p id="encriptando">...</p>
+                </div>
+                <div class="visualizador">
+                    <p id="respuesta">Aqui veras tu mensaje encriptado</p>
+                    <button onclick="onclickCopiar()" class="resetear-styles boton">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

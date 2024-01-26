@@ -1,0 +1,400 @@
+:root {
+    --fondo: #ffe200;
+    --text: #07253c;
+    --inputs: #061605;
+    --binari: #14df00;
+}
+
+body {
+    background: var(--fondo);
+    color: var(--text);
+}
+
+/* Seccion general */
+.container-general {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Mukta", sans-serif;
+}
+
+/* Encabezado del encriptador */
+
+.titulo>h2 {
+    font-family: "Libre Barcode 128 Text";
+    font-size: 100px;
+}
+
+/* Seccion Menu pricipal */
+.menu-principal {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Seccion de encriptador */
+.encriptador {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    background: var(--inputs);
+    box-shadow: 5px 5px 10px black;
+    color: var(--binari);
+}
+
+
+.encriptador>.input-textearea {
+    font-size: 30px;
+    width: 80%;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+    color: var(--binari);
+    background-color: var(--inputs);
+    height: 200px;
+}
+
+.botones-encriptador {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Seccion de cargador */
+.cargador {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cargador>p {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    background: #07253c;
+    padding: 0 15px;
+    border-radius: 20px;
+    opacity: 60%;
+    color: aliceblue;
+}
+
+/* Seccion de vizualizador */
+.visualizador {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 5px;
+    box-shadow: 5px 5px 10px black;
+    background: var(--inputs);
+    color: var(--binari);
+}
+
+.visualizador>p {
+    padding: 0 30px;
+    font-size: 30px;
+    word-wrap: break-word;
+    width: 340px;
+}
+
+
+.resetear-styles {
+    all: unset;
+}
+
+.boton {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #2a66ff;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 30px 5px 30px;
+}
+
+
+
+/* ---------------------------------modo respondive ------------------------------------------*/
+
+@media (max-width: 800px) {
+
+    /* Seccion general */
+    .container-general {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Mukta", sans-serif;
+    }
+
+    /* Encabezado del encriptador */
+
+    .titulo>h2 {
+        font-family: "Libre Barcode 128 Text";
+        font-size: 100px;
+    }
+
+    /* Seccion Menu pricipal */
+    .menu-principal {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Seccion de encriptador */
+    .encriptador {
+        width: 250px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 5px;
+        background: var(--inputs);
+        box-shadow: 5px 5px 10px black;
+        color: var(--binari);
+    }
+
+
+    .encriptador>.input-textearea {
+        font-size: 18px;
+        width: 80%;
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 10px;
+        color: var(--binari);
+        background-color: var(--inputs);
+        height: 150px;
+    }
+
+    .botones-encriptador {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    /* Seccion de cargador */
+    .cargador {
+        width: 250px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cargador>p {
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        background: #07253c;
+        padding: 0 15px;
+        border-radius: 20px;
+        opacity: 60%;
+        color: aliceblue;
+    }
+
+    /* Seccion de vizualizador */
+    .visualizador {
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 250px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        padding: 5px;
+        box-shadow: 5px 5px 10px black;
+        background: var(--inputs);
+        color: var(--binari);
+    }
+
+    .visualizador>p {
+        padding: 0 30px;
+        font-size: 18px;
+        word-wrap: break-word;
+        width: 200px;
+    }
+
+
+    .resetear-styles {
+        all: unset;
+    }
+
+    .boton {
+        color: white;
+        padding: 5px 10px;
+        border-radius: 10px;
+        background-color: #2a66ff;
+        font-size: 15px;
+        cursor: pointer;
+        margin: 0 18px 5px 18px;
+    }
+
+
+}
+
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------------- */
+@media (max-width: 360px) {
+
+    /* Seccion general */
+    .container-general {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Mukta", sans-serif;
+    }
+
+    /* Encabezado del encriptador */
+
+    .titulo>h2 {
+        font-family: "Libre Barcode 128 Text";
+        font-size: 45px;
+    }
+
+    /* Seccion Menu pricipal */
+    .menu-principal {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Seccion de encriptador */
+    .encriptador {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 5px;
+        background: var(--inputs);
+        box-shadow: 5px 5px 10px black;
+        color: var(--binari);
+    }
+
+
+    .encriptador>.input-textearea {
+        font-size: 20px;
+        width: 80%;
+        padding: 10px;
+        margin-top: 30px;
+        border-radius: 10px;
+        color: var(--binari);
+        background-color: var(--inputs);
+        height: 180px;
+    }
+
+    .botones-encriptador {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    /* Seccion de cargador */
+    .cargador {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size: contain;
+    }
+
+    .cargador>p {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        background: #07253c;
+        padding: 0 15px;
+        border-radius: 20px;
+        opacity: 60%;
+        color: aliceblue;
+    }
+
+    /* Seccion de vizualizador */
+    .visualizador {
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        padding: 5px;
+        box-shadow: 5px 5px 10px black;
+        background: var(--inputs);
+        color: var(--binari);
+    }
+
+    .visualizador>p {
+        padding: 0 30px;
+        font-size: 20px;
+        word-wrap: break-word;
+        width: 200px;
+    }
+
+
+    .resetear-styles {
+        all: unset;
+    }
+
+    .boton {
+        color: white;
+        padding: 5px 10px;
+        border-radius: 10px;
+        background-color: #2a66ff;
+        font-size: 18px;
+        cursor: pointer;
+        margin: 0 20px 5px 20px;
+    }
+
+}
